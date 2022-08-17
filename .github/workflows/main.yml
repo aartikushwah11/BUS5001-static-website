@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]	
+    branches: [ "main" ]
   
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --overwrite --account-name <AKB> --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --overwrite --account-name <STORAGE_ACCOUNT_NAME> --auth-mode key -d '$web' -s .
 
   # Azure logout
     - name: logout

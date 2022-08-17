@@ -21,7 +21,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --overwrite --account-name <STORAGE_ACCOUNT_NAME> --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --overwrite --account-name 2nd20876154 --auth-mode key -d '$web' -s .
 
   # Azure logout
     - name: logout
